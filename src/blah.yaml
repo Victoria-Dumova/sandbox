@@ -1,0 +1,28 @@
+name: Sample Project
+version: 1.0.0
+description: This is a sample YAML configuration for a project.
+
+environment:
+  production:
+    database:
+      host: prod.db.server
+      port: 5432
+      username: prod_user
+      password: prod_secret
+
+  staging:
+    database:
+      host: staging.db.server
+      port: 5432
+      username: staging_user
+      password: staging_secret
+
+dependencies:
+  - name: library1
+    version: 2.3.4
+  - name: library2
+    version: 1.0.0
+
+features:
+  featureA: true
+  featureB: false
