@@ -11,11 +11,13 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.print("Hello and welcome!");
         System.out.println("Blah" + "blah");
+        System.out.println("Blah" + "blah˜å");
         System.out.println("Blah" + "blah");
-        System.out.println("Blah" + "blah");
-        System.out.println("Blah" + "blah");
+        System.out.println("Blah" + "blahøü¥y¥yøüu");
         System.out.println("ke等是秒没v kבסביסבהלטםו");
         System.out.println("kek");
+        System.out.println("谁谁说说谁说谁说");
+        System.out.println("بيشسيبلاسقف");
 
         for (int i = 1; i <= 5; i++) {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
