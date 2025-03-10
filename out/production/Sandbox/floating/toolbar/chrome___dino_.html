@@ -96,7 +96,7 @@ html {
 
 button {
   border: 0;
-  border-radius: 20xpx;
+  border-radius: 20px;
   box-sizing: border-box;
   color: var(--primary-button-text-color);
   cursor: pointer;
@@ -3360,7 +3360,7 @@ Runner.prototype = {
           // Start jump.
           if (!this.tRex.jumping && !this.tRex.ducking) {
             if (Runner.audioCues) {
-              this.generatedSoundFx.cancelFootSteps();
+              this.generatedSoundFx.canceltSteps();
             } else {
               this.playSound(this.soundFx.BUTTON_PRESS);
             }
@@ -3884,7 +3884,7 @@ GeneratedSoundFx.prototype = {
   },
 
   stopAll() {
-    this.cancelFootSteps();
+    this.canceltSteps();
   },
 
   /**
@@ -3938,11 +3938,11 @@ GeneratedSoundFx.prototype = {
       const now = this.context.currentTime;
       this.playNote(493.883, now, 0.116);
       this.playNote(659.255, now + 0.116, 0.232);
-      this.loopFootSteps();
+      this.looptSteps();
     }
   },
 
-  loopFootSteps() {
+  looptSteps() {
     if (this.audioCues && !this.bgSoundIntervalId) {
       this.bgSoundIntervalId = setInterval(function() {
         this.playNote(73.42, this.context.currentTime, 0.05, 0.16);
