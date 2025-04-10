@@ -1,9 +1,5 @@
-for x in {0..8}; do
-    for i in {30..37}; do
-        for a in {40..47}; do
-            echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m "
-        done
-        echo
-    done
-done
-echo ""
+# prints “hotpink” in #205 (HEX: #f69, RGB: 255, 102, 153)
+echo -e "\033[38;5;205mhotpink\033[m"
+
+# prints “giant goldfish” in 24-bit orange (HEX: #F38630, RGB: 243, 134, 48)
+echo -e "\033[38;2;243;134;48mgiant goldfish\033[0m"
