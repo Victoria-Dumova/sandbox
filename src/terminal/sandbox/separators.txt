@@ -1,0 +1,19 @@
+Hello world this is a test
+	Here's some symbols: "word" 'phrase' $money$ (inside) [square] {curly} <angle>
+Another line	with	mixed spaces
+
+C:\Users\Victoria.Dumova\IdeaProjects\sandbox\src\terminal\sandbox>
+C:\\Users\\Victoria.Dumova\\IdeaProjects\\sandbox\\src\\terminal\\sandbox>
+
+/usr/bin/bash
+
+(123:456:pupupu)
+
+blah.blah.blAH;blah:blah
+
+"""asdsdasda"""
+
+1_2__3___qqq_
+
+qwe%qwe% %   %asd
+xxx-xxx-x---x==x=
