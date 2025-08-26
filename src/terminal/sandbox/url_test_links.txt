@@ -1,0 +1,36 @@
+# HTTP and HTTPS links
+http://example.com
+https://example.com
+http://www.example.com/test?param=value
+https://subdomain.example.org/path/to/page#section
+
+# FTP links
+ftp://ftp.example.com/file.txt
+ftps://secureftp.example.com/secure/file.zip
+
+# File links
+file:///C:/Users/Example/Documents/file.txt
+file:///etc/hosts
+file:///Users/example/Desktop/test.pdf
+
+# Mail and tel links
+mailto:user@example.com
+mailto:someone@example.org?subject=Test&body=Hello
+tel:+1234567890
+tel:0011223344
+
+# Data URIs
+data:text/plain;base64,SGVsbG8sIFdvcmxkIQ==
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA
+
+# Other protocols
+ssh://user@host.example.com
+sftp://user@host.example.com/path/to/file
+git://github.com/user/repo.git
+irc://irc.example.net/channel
+magnet:?xt=urn:btih:1234567890abcdef1234567890abcdef12345678
+
+# Mixed edge cases
+http://localhost:8080
+http://127.0.0.1
+https://[2001:db8::1]/index.html
