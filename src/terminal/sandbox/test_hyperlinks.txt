@@ -1,0 +1,34 @@
+Test Hyperlinks File
+
+1.  Web URLs
+
+-   https://www.jetbrains.com
+-   http://example.org
+-   https://www.google.com/search?q=jetbrains
+
+2.  File Links
+
+-   file:///C:/Users/Example/Documents/test.txt
+-   file:///home/user/projects/README.md
+-   file:///tmp/sample.log
+
+3.  Mailto Links
+
+-   mailto:support@jetbrains.com
+-   mailto:example@example.org?subject=Test&body=Hello%20World
+
+4.  FTP Links
+
+-   ftp://ftp.example.com/pub/file.txt
+-   ftp://user:password@ftp.example.com/private/data.zip
+
+5.  Custom Schemes
+
+-   ide://open/project/MyProject
+-   vscode://file/C:/workspace/main.py
+-   slack://open?team=T123&id=C456
+
+6.  Anchors and Sections
+
+-   https://en.wikipedia.org/wiki/JetBrains#Products
+-   https://docs.python.org/3/library/os.html#os.path.join
