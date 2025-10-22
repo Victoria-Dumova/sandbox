@@ -189,28 +189,59 @@ change_dir() {
     delta_dir=-1
 }
 
+#getchar() {
+#    trap "" SIGINT SIGQUIT
+#    trap "return;" $SIG_DEAD
+#
+#    while true; do
+#        read -s -n 1 key
+#        case "$key" in
+#            [qQ]) kill -$SIG_QUIT $game_pid
+#                  return
+#                  ;;
+#            [kK]) kill -$SIG_UP $game_pid
+#                  ;;
+#            [lL]) kill -$SIG_RIGHT $game_pid
+#                  ;;
+#            [jJ]) kill -$SIG_DOWN $game_pid
+#                  ;;
+#            [hH]) kill -$SIG_LEFT $game_pid
+#                  ;;
+#       esac
+#    done
+#}
+
 getchar() {
     trap "" SIGINT SIGQUIT
     trap "return;" $SIG_DEAD
 
     while true; do
-        read -s -n 1 key
+        # read one byte (non-blocking due to -n 1)
+        IFS= read -rsn1 key || continue
+
+        # Arrow keys arrive as ESC [ A/B/C/D
+        if [[ $key == $'\e' ]]; then
+            # read the next two bytes of the escape sequence
+            IFS= read -rsn2 rest || continue
+            case "$rest" in
+                "[A") kill -$SIG_UP    $game_pid ;;   # Up arrow
+                "[B") kill -$SIG_DOWN  $game_pid ;;   # Down arrow
+                "[C") kill -$SIG_RIGHT $game_pid ;;   # Right arrow
+                "[D") kill -$SIG_LEFT  $game_pid ;;   # Left arrow
+            esac
+            continue
+        fi
+
+        # WASD + Vim keys + quit
         case "$key" in
-            [qQ]) kill -$SIG_QUIT $game_pid
-                  return
-                  ;;
-            [kK]) kill -$SIG_UP $game_pid
-                  ;;
-            [lL]) kill -$SIG_RIGHT $game_pid
-                  ;;
-            [jJ]) kill -$SIG_DOWN $game_pid
-                  ;;
-            [hH]) kill -$SIG_LEFT $game_pid
-                  ;;
-       esac
+            [wW]|k|K) kill -$SIG_UP    $game_pid ;;
+            [sS]|j|J) kill -$SIG_DOWN  $game_pid ;;
+            [dD]|l|L) kill -$SIG_RIGHT $game_pid ;;
+            [aA]|h|H) kill -$SIG_LEFT  $game_pid ;;
+            [qQ])     kill -$SIG_QUIT  $game_pid; return ;;
+        esac
     done
 }
-
 game_loop() {
     trap "delta_dir=0;" $SIG_UP
     trap "delta_dir=1;" $SIG_RIGHT
@@ -226,7 +257,7 @@ game_loop() {
         fi
         move_snake
         draw_board
-        sleep 0.03
+        sleep 0.2
     done
     
     echo -e "${text_color}Oh, No! You 0xdead$no_color"
