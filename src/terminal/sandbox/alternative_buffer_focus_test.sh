@@ -1,4 +1,7 @@
 #!/bin/bash
+# the script enters and exits alternative buffer (screen)
+# possible checks: focus loss, unnecessary scrolling
+
 set -euo pipefail
 
 # Capture the gh subcommand to run each time (default: issue list)

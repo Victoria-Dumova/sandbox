@@ -11,6 +11,7 @@ Test Hyperlinks File
 -   file:///C:/Users/Example/Documents/test.txt
 -   file:///home/user/projects/README.md
 -   file:///tmp/sample.log
+-   file:///System/Applications/Calculator.app
 
 3.  Mailto Links
 
