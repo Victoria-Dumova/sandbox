@@ -1,4 +1,4 @@
-package terminal.sandbox;
+package terminal.sandbox.java;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;

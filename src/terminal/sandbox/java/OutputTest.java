@@ -1,4 +1,4 @@
-package terminal.sandbox;
+package terminal.sandbox.java;
 
 
 
