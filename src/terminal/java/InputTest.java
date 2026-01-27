@@ -1,4 +1,4 @@
-package terminal.sandbox.java;
+package terminal.java;
 
 import java.util.Scanner;
 

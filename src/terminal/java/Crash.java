@@ -1,12 +1,8 @@
-import java.util.Date;
+package terminal.java;
 
-public class Foo {
-    public void printCurrentDate() {
-
-    }
-
+public class Crash {
     public static void main(String[] args) {
         throw new RuntimeException("Boom!");
     }
-
 }
+
