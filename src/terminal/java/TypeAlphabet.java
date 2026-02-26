@@ -12,7 +12,7 @@ public class TypeAlphabet {
 //        robot.setAutoDelay(50); // ms between key presses
 
         // type a..z
-        for (char c = 'a'; c <= 'z'; c++) {
+        for (var c = 'a'; c <= 'z'; c++) {
             int keyCode = KeyEvent.VK_A + (c - 'a'); // VK_A..VK_Z are contiguous
             robot.keyPress(keyCode);
             robot.keyRelease(keyCode);

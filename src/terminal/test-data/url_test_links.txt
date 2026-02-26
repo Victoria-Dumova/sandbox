@@ -12,6 +12,7 @@ ftps://secureftp.example.com/secure/file.zip
 file:///C:/Users/Example/Documents/file.txt
 file:///etc/hosts
 file:///Users/example/Desktop/test.pdf
+file://C:\Users\Victoria.Dumova
 
 # Mail and tel links
 mailto:user@example.com

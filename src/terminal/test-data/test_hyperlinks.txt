@@ -12,6 +12,7 @@ Test Hyperlinks File
 -   file:///home/user/projects/README.md
 -   file:///tmp/sample.log
 -   file:///System/Applications/Calculator.app
+-   file://C:\Users\Victoria.Dumova
 
 3.  Mailto Links
 

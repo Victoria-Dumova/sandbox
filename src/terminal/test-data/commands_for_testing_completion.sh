@@ -1,10 +1,10 @@
-> A cmdlet is a PowerShell-native command.
-> In PowerShell, many familiar Unix command names (ls, cp, rmdir) are aliases for PowerShell cmdlets
-> (e.g. ls → Get-ChildItem).
+## A cmdlet is a PowerShell-native command.
+## In PowerShell, many familiar Unix command names (ls, cp, rmdir) are aliases for PowerShell cmdlets
+## (e.g. ls → Get-ChildItem).
 
-> Path separator:
-> - Unix shells: `/`
-> - PowerShell (Windows): `\`
+## Path separator:
+## - Unix shells: `/`
+## - PowerShell (Windows): `\`
 
 ## Unix shells (bash, zsh)
 
