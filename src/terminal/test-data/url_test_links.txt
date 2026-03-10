@@ -35,3 +35,6 @@ magnet:?xt=urn:btih:1234567890abcdef1234567890abcdef12345678
 http://localhost:8080
 http://127.0.0.1
 https://[2001:db8::1]/index.html
+
+# JetBrains deamon
+jetbrains://tool/settings?name=Tools
