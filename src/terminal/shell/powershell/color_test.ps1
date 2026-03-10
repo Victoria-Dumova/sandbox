@@ -1,3 +1,6 @@
+# to run the script, cd to the containing folder
+# then run with '.\color_test.ps1' command
+
 # Make sure background is clean and predictable
 $Host.UI.RawUI.BackgroundColor = 'Black'
 Clear-Host
