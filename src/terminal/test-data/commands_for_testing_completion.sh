@@ -45,3 +45,7 @@ git branch -d branchname                       # delete branch
 git branch -D branchname                       # force delete
 git merge --squash branchname                  # merge branchname into the current branch, combine all commits
 git commit --amend                             # edit last commit
+
+
+## npm https://docs.npmjs.com/cli/v11/commands
+npm install -g @google/gemini-cli
