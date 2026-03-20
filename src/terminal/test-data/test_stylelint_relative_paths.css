@@ -1,6 +1,0 @@
-/* run with
-npx stylelint .\test_stylelint_relative_paths.css
-*/
-a {
-colorr: red
-}
