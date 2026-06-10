@@ -2,5 +2,5 @@
 
 
 // In the Terminal, run the script with
-// kotlinc -script LinkTest.kts
+// kotlinc -script Test.kts
 throw Exception("Test")
