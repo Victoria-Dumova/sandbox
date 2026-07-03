@@ -1,0 +1,8 @@
+# copy-paste this to zsh and press Enter to run
+
+autoload -Uz colors && colors
+
+for i in {0..255}; do
+  print -Pn "%K{$i}  %k"
+  (( (i + 1) % 16 == 0 )) && print
+done

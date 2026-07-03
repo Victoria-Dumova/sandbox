@@ -1,0 +1,8 @@
+/*
+1. cd into the directory containing this file
+2. run with
+   npx stylelint .\test_stylelint_relative_paths.css
+*/
+a {
+colorr: red
+}
