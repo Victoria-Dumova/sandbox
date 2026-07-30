@@ -1,0 +1,11 @@
+./test_hyperlinks.txt
+.\test_hyperlinks.txt
+test_hyperlinks.txt
+
+./test_hyperlinks.txt:2-4
+.\test_hyperlinks.txt:2-4
+test_hyperlinks.txt:2-4
+
+~\IdeaProjects\sandbox\src\terminal\testdata\commands_for_testing_completion.sh:12-20
+C:\Users\Victoria.Dumova\IdeaProjects\sandbox\src\terminal\testdata\commands_for_testing_completion.sh:12-20
+
