@@ -1,4 +1,5 @@
 # OSC 8 Hyperlink Demo
+# open with mdcat
 
 This file contains a variety of Markdown links that `mdcat` should
 render as clickable OSC 8 hyperlinks in a supporting terminal.
